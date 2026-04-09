@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+Ovo je uvodni deo teksta sa jednim osnovnim citatom \footnote{Autor A, Knjiga A, 2001, Izdavac A}.
+
+U sledecoj recenici isti citat se ponavlja \textsuperscript{1}, pa ovde ne bi trebalo da nastane nova fusnota.
+
+Sada navodimo grupni citat \footnote{Autor B, Clanak B, 2005, Casopis B ; Autor C, Rad C, 2010, Zbornik C ; Autor D, Rad D, 2015, Konferencija D}, pa ocekujemo jednu zajednicku fusnotu sa tri bibliografske jedinice razdvojene tacka-zarezom.
+
+Ovde imamo potpuno nepoznat kljuc \footnote{[Nepoznat citat: nepoznat1]}.
+
+U ovoj recenici imamo mesoviti slucaj \footnote{Autor A, Knjiga A, 2001, Izdavac A ; [Nepoznat citat: nepoznat2] ; Autor E, Knjiga E, 2018, Izdavac E}, gde je jedan citat vec ranije koriscen, jedan je nepoznat, a jedan se pojavljuje prvi put.
+Onda opet \textsuperscript{4}.
+Imamo i podskup \footnote{Autor A, Knjiga A, 2001, Izdavac A ; [Nepoznat citat: nepoznat2]}.
+Kao i nadskup \footnote{Autor A, Knjiga A, 2001, Izdavac A ; [Nepoznat citat: nepoznat2] ; Autor E, Knjiga E, 2018, Izdavac E ; Autor F, Rad F, 2020, Casopis F, 12, 3, 45--67}.
+
+Sada proveravamo citat koji ima prazna polja \footnote{Nepoznat autor, Nepoznat naslov, 2022, Nepoznat Casopis}.
+
+Ovde koristimo dva nova citata zajedno \footnote{Autor F, Rad F, 2020, Casopis F, 12, 3, 45--67 ; Autor G, Knjiga G, 1999, Izdavac G, Beograd}, pa bi trebalo da budu u istoj fusnoti.
+
+Ovde imamo jos jedan grupni primer \footnote{Autor A, Knjiga A, 2001, Izdavac A ; Autor B, Clanak B, 2005, Casopis B ; Autor F, Rad F, 2020, Casopis F, 12, 3, 45--67}, gde su svi citati vec ranije pomenuti, ali se sada pojavljuju zajedno, pa bi opet trebalo da budu ispisani u jednoj zajednickoj fusnoti.
+
+Sada navodimo citat sa vise polja \footnote{Autor H, Detaljan Rad, 2024, Napredni Casopis, 7, 2, 101--120, 10.1234/test.2024.001}.
+
+Na kraju ponavljamo jedan vec koriscen pojedinacni citat \textsuperscript{10}.
+
+
+
+
+
+\end{document}

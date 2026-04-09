@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+Ovo je uvodni deo teksta sa jednim osnovnim citatom \cite{knjigaA}.
+
+U sledecoj recenici isti citat se ponavlja \cite{knjigaA}, pa ovde ne bi trebalo da nastane nova fusnota.
+
+Sada navodimo grupni citat \cite{clanakB,radC,konfD}, pa ocekujemo jednu zajednicku fusnotu sa tri bibliografske jedinice razdvojene tacka-zarezom.
+
+Ovde imamo potpuno nepoznat kljuc \cite{nepoznat1}.
+
+U ovoj recenici imamo mesoviti slucaj \cite{knjigaA,nepoznat2,knjigaE}, gde je jedan citat vec ranije koriscen, jedan je nepoznat, a jedan se pojavljuje prvi put.
+Onda opet \cite{knjigaA,nepoznat2,knjigaE}.
+Imamo i podskup \cite{knjigaA,nepoznat2}.
+Kao i nadskup \cite{knjigaA,nepoznat2,knjigaE,radF}.
+
+Sada proveravamo citat koji ima prazna polja \cite{nepotpunZapis}.
+
+Ovde koristimo dva nova citata zajedno \cite{radF,knjigaG}, pa bi trebalo da budu u istoj fusnoti.
+
+Ovde imamo jos jedan grupni primer \cite{knjigaA,clanakB,radF}, gde su svi citati vec ranije pomenuti, ali se sada pojavljuju zajedno, pa bi opet trebalo da budu ispisani u jednoj zajednickoj fusnoti.
+
+Sada navodimo citat sa vise polja \cite{detaljanRad}.
+
+Na kraju ponavljamo jedan vec koriscen pojedinacni citat \cite{detaljanRad}.
+
+\bibliographystyle{plain}
+\bibliography{literatura9}
+
+
+\end{document}
